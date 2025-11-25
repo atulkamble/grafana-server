@@ -10,6 +10,11 @@ sudo systemctl start grafana-server
 sudo systemctl enable  grafana-server
 sudo systemctl status grafana-server
 ```
+```
+scp -i /Users/atul/Downloads/key.pem.pem \
+/Users/atul/Downloads/prometheus-3.7.3.darwin-amd64.tar.gz \
+ec2-user@3.234.211.20:/home/ec2-user/
+```
 http://18.232.59.17:3000/
 
 >> admin,admin
