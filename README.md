@@ -33,17 +33,21 @@ http://18.232.59.17:3000/
 >> Admin@123
 
 # Prometheus 
+// download linux | prometheus-3.5.0.linux-amd64.tar.gz setup from https://prometheus.io/download/
+
 ```
 wget https://prometheus.io/download/3.7.3/2025-10-29/prometheus-3.7.3.linux-amd64.tar.gz
 
 sudo yum install collectd-write_prometheus.x86_64 -y
 
-scp -i /Users/atul/Downloads/garafana.pem \
-/Users/atul/Downloads/prometheus-3.7.3.linux-amd64.tar.gz \
-ec2-user@18.232.59.17:/home/ec2-user/
+// on mac
+scp -i /Users/atul/Downloads/key.pem.pem \
+/Users/atul/Downloads/prometheus-3.5.0.linux-amd64.tar.gz \
+ec2-user@34.239.160.234:/home/ec2-user/
 
-sudo tar -xvf prometheus-3.7.3.linux-amd64.tar.gz
-sudo mv prometheus-3.7.3.linux-amd64 prometheus
+sudo tar -xvf prometheus-3.5.0.linux-amd64.tar.gz
+sudo mv prometheus-3.5.0.linux-amd64 prometheus
+
 sudo useradd --no-create-home --shell /bin/false prometheus
 
 // optional
