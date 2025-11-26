@@ -19,6 +19,7 @@ sudo yum install -y https://dl.grafana.com/grafana-enterprise/release/12.2.1/gra
 sudo systemctl start grafana-server
 sudo systemctl enable  grafana-server
 sudo systemctl status grafana-server
+grafana-server --version
 ```
 ```
 scp -i /Users/atul/Downloads/key.pem.pem \
