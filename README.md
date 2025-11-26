@@ -56,13 +56,12 @@ sudo cat /etc/passwd
 sudo cat /etc/group
 
 cd prometheus
+
 sudo cp -r prometheus /usr/local/bin/
 sudo cp -r promtool /usr/local/bin/
-
 sudo mkdir /etc/prometheus
 sudo mkdir /var/lib/prometheus
 sudo cp prometheus.yml /etc/prometheus/
-
 sudo chown -R prometheus:prometheus /etc/prometheus /var/lib/prometheus
 sudo chown prometheus:prometheus /usr/local/bin/prometheus
 sudo chown prometheus:prometheus /usr/local/bin/promtool
